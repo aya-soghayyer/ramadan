@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan Calendar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;434;500&family=Lobster&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" href="imgcalendar/ramadankareemm.png">
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;434;500&family=Lobster&display=swap');
+    </style> -->
+
+    <style>
+        body {
+            border: 4px solid rgb(106, 51, 130);
+            border-radius: 30px;
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/510/711/710/half-moon-ramadan-night-purple-wallpaper-preview.jpg);
+            background-attachment: fixed;
+            /* background-repeat:no-repeat; */
+            background-size: cover;
+            /* background-color: blanchedalmond; */
+            /* display: inline-block; */
+        }
+
+        h1 {
+            color: blanchedalmond;
+            /* font-family:sans-serif; */
+            /* font-family: 'Rubik Bubbles', cursive; */
+            font-family: 'Lobster', cursive;
+            text-shadow: 2px 2px rgb(142, 88, 23);
+            /* font-size: xx-large; */
+
+        }
+
+        h2 {
+            color: blanchedalmond;
+            /* font-family:sans-serif; */
+            /* font-family: 'Rubik Bubbles', cursive; */
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            text-shadow: 2px 2px rgb(142, 88, 23);
+            /* font-family: 'Lobster', cursive; */
+            /* font-size: 48px; */
+            /* font-size: xx-large; */
+        }
+
+        table.table1 {
+            text-transform: capitalize;
+            position: absolute;
+            border: 5px;
+            border-style: solid;
+            border-color: plum;
+            border-radius: 30px;
+            color: blanchedalmond;
+            background-image: linear-gradient(to right, purple, rgb(70, 22, 110), purple);
+            text-align: center;
+            border-collapse: collapse;
+            border-top-right-radius: 30px;
+            margin-left: 9%;
+            width: 40%;
+            opacity: 0.850;
+            /* display: inline-block */
+        }
+
+        table.table2 {
+            text-transform: capitalize;
+            border-collapse: collapse;
+            /* border-collapse: unset; */
+            padding-top: 0;
+            border: 5px;
+            border-style: solid;
+            border-color: plum;
+            border-radius: 30px;
+            color: blanchedalmond;
+            background-image: linear-gradient(to right, purple, rgb(70, 22, 110), purple);
+            text-align: center;
+            margin-left: 52%;
+            width: 40%;
+            opacity: 0.850;
+            /* display: inline-block */
+        }
+
+        td {
+            border: 2px solid plum;
+            padding: 8px;
+        }
+
+        th {
+            border-radius: 5%;
+            padding: 10px;
+
+        }
+
+        /* .ramadanimg {
+            width: 50%;
+            height: 50%;
+            margin: 0;
+            padding: 0;
+            border: 2px solid rgb(175, 90, 236);  
+            border-radius: 5px;  
+        } */
+
+        tr:hover {
+            background-color: bisque;
+            color: purple;
+            cursor: grab;
+        }
+
+        
+
+        marquee {
+            color: blanchedalmond;
+            font-family: 'Lobster', cursive;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+        }
+
+        
+        p {
+            color: blanchedalmond;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+
+        }
+
+        /* .fanusimg {
+            background-image: url(../webprograming/imgcalendar/fanus.png);
+            background-size: 250px;
+            background-attachment: scroll;
+            
+            padding: 1%;
+            margin-top: 5%;
+            margin-left: 0;
+            display: inline;
+            background-repeat: no-repeat;
+            opacity: 0.4;
+            position: inherit;
+
+        } */
+
+        /* .ramadanimg {
+            background-image: url(https://png.pngtree.com/png-clipart/20220307/original/pngtree-ramadan-kareem-decoration-with-golden-islamic-lamp-ornment-png-image_7421350.png);
+            background-size: 270px;
+            background-attachment: scroll;
+            padding: 10%;
+            margin-top: 0%;
+            
+            position: absolute;
+            opacity: 0.3;
+
+        } */
+
+        /* .ramadanimg{
+            background-image: url(../webprograming/imgcalendar/fanus.png);
+            background-size: 280px;
+            background-attachment: scroll;
+            
+            padding: 7%;
+            margin-top: 0%;
+            margin-left: 60%;
+            
+            background-repeat: repeat-x;
+            
+
+        }
+         */
+    </style>
+</head>
+
+<body>
+
+
+    <span class="ramadanimg"></span>
+
+    <!-- <img class="ramadanimg" src="/imgcalendar/ramadankareem.jpg" alt="ramadan kareem"> -->
+    <center>
+        <h1> Welcome To Ramadan Calendar 2023-1444 </h1>
+    </center>
+    <center>
+        <h2> أهلاً و سهلاً بكم في تقويم رمضان 2023-1444</h2>
+    </center>
+    <span class="fanusimg"></span>
+    <marquee behavior="right" direction=""> &hearts; صومًا مقبولًا بإذن اللّه &hearts; ... Ramadan Kareem رمضان كريم
+    </marquee>
+    <br>
+    <div class="tables">
+        <div class="dis">
+            <table class="table1">
+                <tr>
+                    <th> Ramadan </th>
+                    <th> Date </th>
+                    <th> Day </th>
+                    <th> Sahur</th>
+                    <th> Iftar</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>23-3</td>
+                    <td>Thursday</td>
+                    <td>04:19 AM</td>
+                    <td>05:53 PM</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>24-3</td>
+                    <td>Friday</td>
+                    <td>04:18 AM</td>
+                    <td>05:53 PM</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>25-3</td>
+                    <td>Saturday</td>
+                    <td>04:16 AM</td>
+                    <td>05:54 PM</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>26-3</td>
+                    <td>Sunday</td>
+                    <td>04:15 AM</td>
+                    <td>05:55 PM</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>27-3</td>
+                    <td>Monday</td>
+                    <td>04:14 AM</td>
+                    <td>05:55 PM</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>28-3</td>
+                    <td>Tuesday</td>
+                    <td>04:12 AM</td>
+                    <td>05:56 PM</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>29-3</td>
+                    <td>wednesday</td>
+                    <td>04:11 AM</td>
+                    <td>05:57 PM</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>30-3</td>
+                    <td>Thursday</td>
+                    <td>04:09 AM</td>
+                    <td>05:57 PM</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>31-3</td>
+                    <td>Friday</td>
+                    <td>04:08 AM</td>
+                    <td>05:58 PM</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>1-4</td>
+                    <td>Saturday</td>
+                    <td>04:07 AM</td>
+                    <td>05:59 PM</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>2-4</td>
+                    <td>Sunday</td>
+                    <td>04:05 AM</td>
+                    <td>05:59 PM</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>3-4</td>
+                    <td>Monday</td>
+                    <td>04:04 AM</td>
+                    <td>06:00 PM</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>4-4</td>
+                    <td>Tuesday</td>
+                    <td>04:03 AM</td>
+                    <td>06:01 PM</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>5-4</td>
+                    <td>wednesday</td>
+                    <td>04:01 AM</td>
+                    <td>06:01 PM</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>6-4</td>
+                    <td>Thursday</td>
+                    <td>04:00 AM</td>
+                    <td>06:02 PM</td>
+                </tr>
+            </table>
+        </div>
+        <div class="dis">
+            <table class="table2">
+                <tr>
+                    <th> Ramadan </th>
+                    <th> Date </th>
+                    <th> Day </th>
+                    <th> Sahur</th>
+                    <th> Iftar</th>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>23-3</td>
+                    <td>Thursday</td>
+                    <td>03:58 AM</td>
+                    <td>06:03 PM</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>24-3</td>
+                    <td>Friday</td>
+                    <td>03:57 AM</td>
+                    <td>06:03 PM</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>25-3</td>
+                    <td>Saturday</td>
+                    <td>03:56 AM</td>
+                    <td>06:04 PM</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>26-3</td>
+                    <td>Sunday</td>
+                    <td>03:54 AM</td>
+                    <td>06:05 PM</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>27-3</td>
+                    <td>Monday</td>
+                    <td>03:53 AM</td>
+                    <td>06:05 PM</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>28-3</td>
+                    <td>Tuesday</td>
+                    <td>03:51 AM</td>
+                    <td>06:06 PM</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>29-3</td>
+                    <td>wednesday</td>
+                    <td>03:50 AM</td>
+                    <td>06:07 PM</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>30-3</td>
+                    <td>Thursday</td>
+                    <td>03:49 AM</td>
+                    <td>06:07 PM</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>31-3</td>
+                    <td>Friday</td>
+                    <td>03:47 AM</td>
+                    <td>06:08 PM</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>1-4</td>
+                    <td>Saturday</td>
+                    <td>03:46 AM</td>
+                    <td>06:09 PM</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>2-4</td>
+                    <td>Sunday</td>
+                    <td>04:45 AM</td>
+                    <td>06:09 PM</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>3-4</td>
+                    <td>Monday</td>
+                    <td>03:43 AM</td>
+                    <td>06:10 PM</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>4-4</td>
+                    <td>Tuesday</td>
+                    <td>03:42 AM</td>
+                    <td>06:11 PM</td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>5-4</td>
+                    <td>wednesday</td>
+                    <td>03:40 AM</td>
+                    <td>06:11 PM</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>6-4</td>
+                    <td>Thursday</td>
+                    <td>03:39 AM</td>
+                    <td>06:11 PM</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- <div class="navbar" >سبحان الله </div> -->
+    <center>
+        <p>وضع هذا التوقيت حسب التوقيت الدهري للمسجد الأقصى (التوقيت الشتوي ) و على المقيمين خارجه مراعاة فروق التوقيت
+        </p>
+    </center>
+    <center>
+        <p> <i class="fa-regular fa-moon"></i> كل عام وأنتم إلى اللّه أقرب <i class="fa-regular fa-moon"></i></p>
+    </center>
+    <center>
+        <p> <sub> &copy; made by Aya Soghayyer</sub></p>
+    </center>
+
+
+</body>
+
+</html>
